@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box; /* Firefox, other Gecko */
+    box-sizing: border-box; /* Opera/IE 8+ */
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+  }
+  /* Header */
+  .sticky {
+    /* position: fixed;
+    top: 0; */
+  }
+
+  .navbar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    background: rgb(0, 212, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 212, 255, 1) 41%,
+      rgba(6, 84, 177, 1) 84%
+    );
+    z-index: 1;
+  }
+
+  #nav-title {
+    margin-right: auto;
+    font-size: 1.5em;
+    padding-left: 20px;
+  }
+
+  header li {
+    list-style: none;
+    padding: 0 20px;
+  }
+
+  .nav-link {
+    color: #ffff;
+    transition: all 0.3s ease 0s;
+  }
+
+  header a:hover {
+    color: #b2dfdb;
+  }
+  .logo {
+    margin: 5px;
+  }
+
+  /* Text */
+  .text-align-center{
+    text-align: center;
+  }
+
+  .bold{
+    font-weight: bold;
+  }
+
+  .list-circle li{
+    list-style-type: circle;
+  }
+
+  /* Colors */
+
+  .red{
+    color: #FA0102;
+  }
+
+  .white{
+    color: #FFFF;
+  }
+  /* Track My Plan Section */
+
+  .track-my-plan{
+    display: flex; align-items: center; justify-content: center;
+  }
+
+  .cover{
+    width: 100%; opacity: 0.7; z-index: 0;
+    
+  }
+
+  /* Cards */
+
+  .card-img-top, .card-body{
+    overflow: hidden;
+  }
+
+  .align-text-left{
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 20px;
+    z-index: 1;
+    width: 100%;
+    max-width: 60vw;
+  }
+
+  .track-my-plan-text{
+    color: #FA0102;
+    font-size: 6em;
+    font-weight: 600;
+  }
+
+  .red-hr{
+    background-color: #FA0102;
+    padding: 2px;
+    opacity: 1;
+    width: 30%;
+  }
+
+  .red-hr-2{
+    background-color: #FA0102;
+    border: none;
+    padding: 2px;
+    opacity: 1;
+    margin: 10px auto !important;
+    width: 20%;
+  }
+
+  .track-sub-text{
+    font-size: 2em;
+  }
+
+  .track-button{
+    background-color: #1A1257;
+    border: none;
+    color: #ffff;
+    border-radius: 40px;
+    padding: 20px 40px;
+    font-size: larger;
+  }
+
+  .track-button:hover{
+    background-color: #83809a;
+  }
+  /* BILIS KABIT PROMO  */
+  .bilis-kabit-promo{
+    padding: 100px;
+  }
+
+  .card-plan{
+    border: none;
+  }
+
+  .card-row-plan{
+    padding: 2em 20%;
+  }
+  .circle-icon{
+    border-radius: 100%; background-color: #1A1257; width: 100px; height: 100px;
+  }
+/* ID Requirements */
+  .bullet li::before {content: "•"; color: black;
+   font-weight: bolder;
+   padding-right: 10px;
+  }
+
+  .id-requirements{
+padding: 2em 4em;
+  }
+
+  .requirements{
+    font-size: 2em;
+  }
+
+  .list-id{
+    color: #FA0102; text-decoration: underline;
+  }
+  .list-id:hover{
+    cursor: pointer;}
+  .id-header{
+    background: rgb(0, 212, 255);
+    background: linear-gradient(
+      90deg,
+      rgba(0, 212, 255, 1) 41%,
+      rgba(6, 84, 177, 1) 84%
+    );
+  }
+
+  /* Important Section */
+  .important-section{
+    margin: 8em 4em;
+  }
+
+  .important-card{
+    padding: 2em 10%;
+  }
+  .important-card .col{
+    height: 300px;
+  }
+  .important-card .card{
+    height: 100%;
+  }
+
+  /* Footer */
+footer{
+  background-color: black;
+  }
+
+.footer-col{
+  padding: 2em;
+}
+
+.footer-ul li:hover{
+  color: #83809a;
+  cursor: pointer;
+}
+
+.footer-ul{
+  margin-right: 4em;
+}
+.messenger:hover,.facebook:hover,.gmail:hover{
+  opacity: 0.5;
+  cursor: pointer;
+}
+/* Tracking Section */
+.tracking-section{
+  
+}
