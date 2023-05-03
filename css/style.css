@@ -99,6 +99,18 @@
     max-width: 60vw;
   }
 
+  .align-text-center{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 20px;
+    z-index: 1;
+    width: 100%;
+    max-width: 60vw;
+  }
+
   .track-my-plan-text{
     color: #FA0102;
     font-size: 6em;
