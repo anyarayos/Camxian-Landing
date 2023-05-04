@@ -232,3 +232,21 @@ footer{
 .tracking-section{
   
 }
+
+/* PLDT PLAN */
+
+.plan-icon {
+  width: 30%;
+  height: auto;
+}
+
+.plan-img-spaces {
+  margin-top: 20px;
+}
+
+.plan-background-img {
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
