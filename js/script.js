@@ -1,34 +1,38 @@
+//  Home PLDT Plans About Us FAQ 
+// Navbar
 const home = document.getElementById('home');
-const pldtPlan = document.getElementById('pldtPlan');
-const pldtEnterprise = document.getElementById('pldtEnterprise');
+const pldtPlans = document.getElementById('pldtPlans');
 const aboutUs = document.getElementById('aboutUs');
-const support = document.getElementById('support');
-const updates = document.getElementById('updates');
-const tracking = document.getElementById('tracking');
-// TODO:
-const contactUs = document.getElementById('contactUs');
-const termsConditions = document.getElementById('termsConditions');
-const securityPrivacy = document.getElementById('securityPrivacy');
+const faq = document.getElementById('faq');
+
+// -------------------------------------------- NAVBAR
 
 home.addEventListener('click', function() {
      window.location.href = "index.html";
   });
-pldtPlan.addEventListener('click', function() {
-//   window.location.href = "tracking.html";
-});
-pldtEnterprise.addEventListener('click', function() {
-    // window.location.href = "tracking.html";
-  });
-aboutUs.addEventListener('click', function() {
-  window.location.href = "about-us.html";
-});
-support.addEventListener('click', function() {
-    window.location.href = "support.html";
-  });
-updates.addEventListener('click', function() {
+pldtPlans.addEventListener('click', function() {
 //   window.location.href = "tracking.html";
 });
 
+aboutUs.addEventListener('click', function() {
+  window.location.href = "about-us.html";
+});
+
+faq.addEventListener('click', function() {
+  window.location.href = "faq.html";
+});
+
+// -------------------------------------------- SPAN & BUTTON
+
+// SPAN ELEMENT
+if(document.getElementById('securityAndPrivacy') != null){
+  const securityAndPrivacy = document.getElementById('securityAndPrivacy');
+  securityAndPrivacy.addEventListener('click', function() {
+    window.location.href = "security-and-privacy.html";
+  });
+}
+
+// TRACK BUTTON INDEX
 if(document.getElementById('track-button') !=null){
   const trackbutton = document.getElementById('track-button');
   trackbutton.addEventListener('click', function() {
@@ -36,27 +40,30 @@ if(document.getElementById('track-button') !=null){
   });
 }
 
-tracking.addEventListener('click', function() {
-  window.location.href = "tracking.html";
+// -------------------------------------------- FOOTER 
+// TODO: ADD Home PLDT Plans About Us FAQ 
+const home_footer = document.getElementById('home_footer');
+const pldtPlans_footer = document.getElementById('pldtPlans_footer');
+const aboutUs_footer = document.getElementById('aboutUs_footer');
+const faq_footer = document.getElementById('faq_footer');
+const securityPrivacy_footer = document.getElementById('securityPrivacy_footer');
+
+home_footer.addEventListener('click', function() {
+  window.location.href = "index.html";
 });
 
-// --------------------------------------------
-if(document.getElementById('securityAndPrivacy') != null){
-  const termsAndConditions = document.getElementById('termsAndConditions');
-  termsAndConditions .addEventListener('click', function() {
-    window.location.href = "terms-and-conditions.html";
-  });
-  const securityAndPrivacy = document.getElementById('securityAndPrivacy');
-securityAndPrivacy.addEventListener('click', function() {
+pldtPlans_footer.addEventListener('click', function() {
+  window.location.href = "";
+});
+
+aboutUs_footer.addEventListener('click', function() {
+  window.location.href = "about-us.html";
+});
+
+faq_footer.addEventListener('click', function() {
+  window.location.href = "faq.html";
+});
+
+securityPrivacy_footer.addEventListener('click', function() {
   window.location.href = "security-and-privacy.html";
 });
-}
-
-
-termsConditions.addEventListener('click', function() {
-    window.location.href = "terms-and-conditions.html";
-  });
-  
-  securityPrivacy.addEventListener('click', function() {
-    window.location.href = "security-and-privacy.html";
-  });
