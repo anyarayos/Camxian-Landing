@@ -53,7 +53,7 @@ home_footer.addEventListener('click', function() {
 });
 
 pldtPlans_footer.addEventListener('click', function() {
-  window.location.href = "";
+  window.location.href = "pldtplans.html";
 });
 
 aboutUs_footer.addEventListener('click', function() {
