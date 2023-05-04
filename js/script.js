@@ -20,15 +20,43 @@ pldtEnterprise.addEventListener('click', function() {
     // window.location.href = "tracking.html";
   });
 aboutUs.addEventListener('click', function() {
-//   window.location.href = "tracking.html";
+  window.location.href = "about-us.html";
 });
 support.addEventListener('click', function() {
-    // window.location.href = "tracking.html";
+    window.location.href = "support.html";
   });
 updates.addEventListener('click', function() {
 //   window.location.href = "tracking.html";
 });
 
+if(document.getElementById('track-button') !=null){
+  const trackbutton = document.getElementById('track-button');
+  trackbutton.addEventListener('click', function() {
+    window.location.href = "tracking.html";
+  });
+}
+
 tracking.addEventListener('click', function() {
   window.location.href = "tracking.html";
 });
+
+// --------------------------------------------
+if(document.getElementById('securityAndPrivacy') != null){
+  const termsAndConditions = document.getElementById('termsAndConditions');
+  termsAndConditions .addEventListener('click', function() {
+    window.location.href = "terms-and-conditions.html";
+  });
+  const securityAndPrivacy = document.getElementById('securityAndPrivacy');
+securityAndPrivacy.addEventListener('click', function() {
+  window.location.href = "security-and-privacy.html";
+});
+}
+
+
+termsConditions.addEventListener('click', function() {
+    window.location.href = "terms-and-conditions.html";
+  });
+  
+  securityPrivacy.addEventListener('click', function() {
+    window.location.href = "security-and-privacy.html";
+  });
