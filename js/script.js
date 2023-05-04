@@ -11,7 +11,7 @@ home.addEventListener('click', function() {
      window.location.href = "index.html";
   });
 pldtPlans.addEventListener('click', function() {
-//   window.location.href = "tracking.html";
+  window.location.href = "pldtplans.html";
 });
 
 aboutUs.addEventListener('click', function() {
