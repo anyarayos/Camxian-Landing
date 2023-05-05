@@ -2,6 +2,7 @@
 // Navbar
 const home = document.getElementById('home');
 const pldtPlans = document.getElementById('pldtPlans');
+const trackApplication = document.getElementById('trackApplication');
 const aboutUs = document.getElementById('aboutUs');
 const faq = document.getElementById('faq');
 
@@ -12,6 +13,10 @@ home.addEventListener('click', function() {
   });
 pldtPlans.addEventListener('click', function() {
   window.location.href = "pldtplans.html";
+});
+
+trackApplication.addEventListener('click', function() {
+  window.location.href = "track-application.html";
 });
 
 aboutUs.addEventListener('click', function() {
@@ -44,6 +49,7 @@ if(document.getElementById('track-button') !=null){
 // TODO: ADD Home PLDT Plans About Us FAQ 
 const home_footer = document.getElementById('home_footer');
 const pldtPlans_footer = document.getElementById('pldtPlans_footer');
+const trackApplication_footer = document.getElementById('trackApplication_footer');
 const aboutUs_footer = document.getElementById('aboutUs_footer');
 const faq_footer = document.getElementById('faq_footer');
 const securityPrivacy_footer = document.getElementById('securityPrivacy_footer');
@@ -54,6 +60,10 @@ home_footer.addEventListener('click', function() {
 
 pldtPlans_footer.addEventListener('click', function() {
   window.location.href = "pldtplans.html";
+});
+
+trackApplication_footer.addEventListener('click', function() {
+  window.location.href = "track-application.html";
 });
 
 aboutUs_footer.addEventListener('click', function() {

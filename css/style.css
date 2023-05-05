@@ -17,12 +17,12 @@
   .navbar {
     padding-top: 1em;
     padding-bottom: 1em;
-    background: rgb(0, 212, 255);
-    background: linear-gradient(
+    background: #FA0102!important;
+    /* background: linear-gradient(
       90deg,
       rgba(0, 212, 255, 1) 41%,
       rgba(6, 84, 177, 1) 84%
-    );
+    ); */
     z-index: 1;
   }
 
@@ -209,7 +209,8 @@ padding: 2em 4em;
 
   /* Footer */
 footer{
-  background-color: black;
+  background-color: white;
+  box-shadow: 0px -1px 50px -14px rgba(0,0,0,0.1);
   }
 
 .footer-col{
