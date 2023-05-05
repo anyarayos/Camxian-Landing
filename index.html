@@ -61,15 +61,23 @@
       padding-left: 0!important;
     }
     .important-section {
-    margin: 8em 1em!important;
+    margin: 8em 1em!important;}
+
+    /*  */
+    .carousel-inner div{
+  height: 300px!important;
+  overflow: hidden;
 }
+
 .instructions{
   font-size: 1em!important;
 }
 }
 /* ---------------- */
-
-
+.carousel-inner .carousel-item{
+  height: 600px;
+  overflow: hidden;
+}
     </style>
     
   </head>
@@ -114,7 +122,64 @@
     </nav>
 
     <!-- TODO: SUBSCRIPTIONS CAROUSEL -->
-
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="--carousel"  >
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+  </div>
+  <div class="carousel-inner" >
+    <div class="carousel-item active" data-bs-interval="3000">
+      <div style="background-color: black;">
+        <img src="img/1699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
+      </div>
+      <div class="carousel-caption d-none d-md-block" style="color: black;">
+        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">200 Mbps</h1>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">100Mbps</span></p>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 1699</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <div style="background-color: black;">
+        <img src="img/2099.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
+      </div>
+      <div class="carousel-caption d-none d-md-block" style="color: black;">
+        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">400 Mbps</h1>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">200Mbps</span></p>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2099</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <div style="background-color: black;">
+        <img src="img/2699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
+      </div>
+      <div class="carousel-caption d-none d-md-block" style="color: black;">
+        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">600 Mbps</h1>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p>
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2699</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="3000">
+      <div style="background-color: black;">
+        <img src="img/1000mbps.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
+      </div>
+      <div class="carousel-caption d-none d-md-block" style="color: black;">
+        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">1000 Mbps</h1>
+        <!-- <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p> -->
+        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Price available upon request</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
     <!-- BILIS KABIT PROMO : TRANFER TO PLDT PLANS--> 
 
