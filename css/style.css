@@ -292,3 +292,13 @@ footer{
     color: #0000008b;
     font-weight: bold;
   }
+
+  /* FOOTER RESPONSIVE */
+  @media only screen and (max-width: 600px) {
+    .footer-col{
+    justify-content:start!important;
+  }
+  .footer-right{
+    padding: 1em;;
+  }
+  }
