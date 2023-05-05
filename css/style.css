@@ -162,7 +162,8 @@
     padding: 2em 20%;
   }
   .circle-icon{
-    border-radius: 100%; background-color: #1A1257; width: 100px; height: 100px;
+    border-radius: 100%; background-color: #FA0102
+    ; width: 100px; height: 100px;
   }
 /* ID Requirements */
   .bullet li::before {content: "•"; color: black;
