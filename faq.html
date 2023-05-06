@@ -19,6 +19,7 @@
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
     <style>
+      
       .accordion{
         margin: 2em;
       }
@@ -42,6 +43,12 @@
       }
       /* Responsive */
       @media only screen and (max-width: 500px) {
+        .faq-h1{
+          font-size: 2em!important;
+        }
+        .accordion-button{
+        font-size: 0.9em!important;
+      }
         .carousel{
         height: 200px;
         overflow: hidden;
@@ -49,6 +56,25 @@
       .carousel-inner div{
         height: 200px;
         overflow: hidden;
+      }
+      .accordion{
+        margin:0;
+      }
+      .faq-section{
+        padding: 1em!important;
+      }
+      .contact-section{ 
+        padding: 0.5em!important;
+      }
+      .padding-s{
+        padding: 0!important;
+      }
+      .padding-form{
+        padding: 0em;
+      }
+      .bx-shdw{
+        padding: 0em!important;
+        box-shadow: none!important;
       }
       }
     </style>
@@ -106,23 +132,23 @@
     </div>
 
         <!-- Frequently Asked Questions -->
-        <section style="padding: 4em;">
+        <section class="faq-section" style="padding: 4em;">
           <div class="row d-flex justify-content-center">
-            <div class="col-6 text-align-center">
-              <h1 style="font-size: 3em;">Frequently Asked Questions</h1>
+            <div class="col-lg-6 col-md-12 text-align-center">
+              <h1 style="font-size: 3em;" class="faq-h1">Frequently Asked Questions</h1>
             </div>
           </div>
 
-          <div class="accordion" id="accordionExample">
+          <div class="accordion accordion-flush" id="accordionExample">
             <div class="accordion-item">
               <h2 class="accordion-header">
-                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseTwo">
                   Accordion Item #1
                 </button>
               </h2>
-              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+              <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
                 </div>
               </div>
             </div>
@@ -154,9 +180,9 @@
         </section>
   
         <!-- Contact Us -->
-        <section class="row d-flex align-content-center" style="padding: 2em 5em; height: 50vw;">
+        <section class="row d-flex align-content-center contact-section" style="padding: 2em 5em; height: auto;">
           <div class="row d-flex justify-content-center" style="padding: 3em;">
-            <div class="col-5" style="padding: 3em;">
+            <div class="col-lg-5 col-md-12 padding-s" style="padding: 3em;">
               <h1 class="bold" style="font-size: 3em;">Contact Us</h1>
               <p>
                 Need to get in Touch with us?
@@ -164,29 +190,29 @@
               <span class="red">info@camxian.com</span>  you'd like to contact below. 
               </p>
             </div>
-            <div class="col-5" style="padding: 3em;box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);
+            <div class="col-lg-5 col-md-12 padding-s bx-shdw" style="padding: 3em;box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);
             -webkit-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);
             -moz-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);">
-              <form action="" style="">
+              <form class="padding-form" action="">
                 <div class="row">
-                  <div class="col">
+                  <div class="col-md-12">
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">First Name</label>
                       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
                     </div>
                   </div>
-                  <div class="col">
+                  <div class="col-md-12">
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">Last Name</label>
                       <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
                     </div>
                   </div>
                 </div>
-                <div class="mb-3">
+                <div class="col-md-12 mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email address</label>
                   <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
-                <div class="mb-3">
+                <div class="col-md-12 mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">How can we help you?</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
