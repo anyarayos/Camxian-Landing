@@ -29,7 +29,7 @@
   }
 
     /* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 768px) {
   .tracker-logo{
       display: none;
     }
@@ -37,7 +37,7 @@
       padding: 0;
     }
     .xs-padding{
-      padding: 1em;
+      padding: 0 1em;
     }
     .font-2-xs{
       font-size: 1.5em!important;
@@ -61,15 +61,33 @@
       padding-left: 0!important;
     }
     .important-section {
-    margin: 8em 1em!important;}
-
-    /*  */
+    margin: 4em 1em!important;
+  }
+  .instructions{
+  font-size: 1em!important;
+}
+    /* Responsive Carousel */
     .carousel-inner div{
-  height: 300px!important;
+  height: 250px!important;
   overflow: hidden;
 }
+.overlay{
+  background-color: #ffff!important;
+}
+.carousel-caption{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
 
-.instructions{
+}
+/* Responsive Captions */
+.speed-main{
+  font-size: 3em!important;
+  
+}
+.speed-old, .plan-name{
   font-size: 1em!important;
 }
 }
@@ -78,6 +96,10 @@
   height: 600px;
   overflow: hidden;
 }
+.speed-main,.speed-old,.plan-name{
+  text-shadow: 2px 2px 3px rgba(0,0,0,0.33);
+}
+
     </style>
     
   </head>
@@ -122,7 +144,7 @@
     </nav>
 
     <!-- TODO: SUBSCRIPTIONS CAROUSEL -->
-<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="--carousel"  >
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel"  >
   <div class="carousel-indicators">
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -131,43 +153,43 @@
   </div>
   <div class="carousel-inner" >
     <div class="carousel-item active" data-bs-interval="3000">
-      <div style="background-color: black;">
+      <div  class="overlay" style="background-color: black;">
         <img src="img/1699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
       </div>
-      <div class="carousel-caption d-none d-md-block" style="color: black;">
-        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">200 Mbps</h1>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">100Mbps</span></p>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 1699</p>
+      <div class="carousel-caption d-md-block" style="color: black;">
+        <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">200 Mbps</h1>
+        <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">100Mbps</span></p>
+        <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 1699</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
-      <div style="background-color: black;">
+      <div class="overlay" style="background-color: black;">
         <img src="img/2099.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
       </div>
-      <div class="carousel-caption d-none d-md-block" style="color: black;">
-        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">400 Mbps</h1>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">200Mbps</span></p>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2099</p>
+      <div class="carousel-caption d-md-block" style="color: black;">
+        <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">400 Mbps</h1>
+        <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">200Mbps</span></p>
+        <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2099</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
-      <div style="background-color: black;">
+      <div  class="overlay" style="background-color: black;">
         <img src="img/2699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
       </div>
-      <div class="carousel-caption d-none d-md-block" style="color: black;">
-        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">600 Mbps</h1>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p>
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2699</p>
+      <div class="carousel-caption d-md-block" style="color: black;">
+        <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">600 Mbps</h1>
+        <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p>
+        <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2699</p>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
-      <div style="background-color: black;">
+      <div  class="overlay" style="background-color: black;">
         <img src="img/1000mbps.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
       </div>
-      <div class="carousel-caption d-none d-md-block" style="color: black;">
-        <h1 class="bold" style="color: white;font-size: 5em;margin-bottom: 0!important;">1000 Mbps</h1>
+      <div class="carousel-caption d-md-block" style="color: black;">
+        <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">1000 Mbps</h1>
         <!-- <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p> -->
-        <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Price available upon request</p>
+        <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 9499</p>
       </div>
     </div>
   </div>

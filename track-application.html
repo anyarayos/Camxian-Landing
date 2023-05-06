@@ -124,7 +124,7 @@
               <div class="">
                 <p class="red bold">*DISCLAIMER: This tracker is for CAMXIAN Customers only.*</p>
                 <p class="red bold">Please enter your Service Request (SR) Number</p>
-                <input class="form-control form-control-lg" type="text" placeholder="Service Request (SR) (e.g. 02******)" 
+                <input id="srNumber" class="form-control form-control-lg" type="text" placeholder="Service Request (SR) (e.g. 02******)" 
                 style="
                 border: solid rgba(0, 0, 0, 0.444) 2px;
                 border-radius: 20px;
@@ -185,22 +185,26 @@
     const checkbox = document.getElementById('userAgreement');
     const showModalBtn = document.getElementById('checkStatus');
     const modal = document.getElementById('trackingModal');
-
-    // $('#modal').modal("show")
-    // 
     
     function showStatus() {
       var x = document.getElementById("warnAgree");
-        if (document.getElementById('userAgreement').checked) {
+
+    if(document.getElementById('srNumber').value == ""){
+      x.innerHTML = "Please enter your SR Number!";
+      x.style.display = "block";
+    }else{
+      
+      if (document.getElementById('userAgreement').checked) {
           x.style.display = "none";
             $('#trackingModal').modal("show");
         } else {
-
           if (x.style.display === "none") {
             x.style.display = "block";
           } 
         }
+    }      
     }
+
   </script>
     <!-- Footer -->
     <footer >

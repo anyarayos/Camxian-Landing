@@ -18,6 +18,40 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      .accordion{
+        margin: 2em;
+      }
+      .accordion-button{
+        font-size: 1.2em;
+      }
+      /* carousel */
+      .carousel{
+        height: 400px;
+        overflow: hidden;
+      }
+      .carousel-inner div{
+        height: 500px;
+        overflow: hidden;
+      }
+      .carousel-caption{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%;
+      }
+      /* Responsive */
+      @media only screen and (max-width: 500px) {
+        .carousel{
+        height: 200px;
+        overflow: hidden;
+      }
+      .carousel-inner div{
+        height: 200px;
+        overflow: hidden;
+      }
+      }
+    </style>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -58,22 +92,18 @@
         </div>
       </div>
     </nav>
-    <!-- Support -->
-        <section class="support">
-          <img
-            src="img/support.png"
-            alt="support"
-           class="cover"
-          />
-          <div class="align-text-center">
-            <h1 class="" style="    
-            color: #FA0102;
-            font-size: 5em;
-            font-weight: 600;
-            ">FAQ</h1>
-            <hr class="red-hr-2"/>
+    <!-- FAQ Image -->
+    <div id="carouselExampleCaptions" class="carousel">
+      <div class="carousel-inner" >
+        <div class="carousel-item active">
+            <img src="img/support.png" class="h-100 img-header" alt="..." style="opacity: 0.7;">
+          <div class="carousel-caption ">
+            <h1 class="bold speed-main red" style="font-size: 5em;">FAQ</h1>
+ 
           </div>
-        </section>
+        </div>
+      </div>
+    </div>
 
         <!-- Frequently Asked Questions -->
         <section style="padding: 4em;">
@@ -83,99 +113,44 @@
             </div>
           </div>
 
-          <!-- This is a row. -->
-          <div class="row" style="padding: 3em 0;  margin: 0 5em;">
-            <div class="col-6">
-              <h2>
-                Where can I pay my Bills?
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                  Accordion Item #1
+                </button>
               </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
             </div>
-            <div class="col-6 d-flex justify-content-end" data-bs-toggle="collapse" href="#collapseQuestion1">
-              <button style="	background: none;
-              color: inherit;
-              border: none;
-              padding: 0;;">
-                <svg fill="#000000"  width="60px" height="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" stroke="#000000" stroke-width="5.500000000000001">
-
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                  
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  
-                  <g id="SVGRepo_iconCarrier"> <g> <path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58 c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022 c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/> </g> </g>
-                  
-                  </svg>
-              </button>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
+              </div>
             </div>
-            <div class="collapse" id="collapseQuestion1">
-              <div class="card card-body" style="padding: 2em;">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti commodi, libero voluptates blanditiis necessitatibus, explicabo adipisci mollitia repudiandae dolore cupiditate animi reprehenderit vitae ipsa distinctio! Debitis deleniti et, illo iusto fugit natus. Odio voluptatem corrupti ipsa impedit repellendus error facilis exercitationem maxime similique, adipisci ex amet, sapiente ab eligendi id fugiat delectus. Possimus saepe facilis vero esse, illo veritatis, incidunt quo ratione inventore doloribus eligendi explicabo soluta tempora aspernatur natus ad quidem ea minima iusto optio. Sint accusantium delectus placeat in itaque dicta, ut possimus? Ipsum omnis eum officiis, dolorum distinctio aliquid, aliquam accusamus dolore voluptas mollitia fugit repudiandae nisi!
-              </p>
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                </div>
               </div>
             </div>
           </div>
-          <!-- This is a row. -->
-          <div class="row" style="padding: 3em 0;  margin: 0 5em;border-top: solid black 2px;">
-            <div class="col-6">
-              <h2>
-                Where can I pay my Bills?
-              </h2>
-            </div>
-            <div class="col-6 d-flex justify-content-end" data-bs-toggle="collapse" href="#collapseQuestion2">
-              <button style="	background: none;
-              color: inherit;
-              border: none;
-              padding: 0;;">
-                <svg fill="#000000"  width="60px" height="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" stroke="#000000" stroke-width="5.500000000000001">
-
-                  <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                  
-                  <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                  
-                  <g id="SVGRepo_iconCarrier"> <g> <path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58 c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022 c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/> </g> </g>
-                  
-                  </svg>
-              </button>
-            </div>
-            <div class="collapse" id="collapseQuestion2">
-              <div class="card card-body" style="padding: 2em;">
-              <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti commodi, libero voluptates blanditiis necessitatibus, explicabo adipisci mollitia repudiandae dolore cupiditate animi reprehenderit vitae ipsa distinctio! Debitis deleniti et, illo iusto fugit natus. Odio voluptatem corrupti ipsa impedit repellendus error facilis exercitationem maxime similique, adipisci ex amet, sapiente ab eligendi id fugiat delectus. Possimus saepe facilis vero esse, illo veritatis, incidunt quo ratione inventore doloribus eligendi explicabo soluta tempora aspernatur natus ad quidem ea minima iusto optio. Sint accusantium delectus placeat in itaque dicta, ut possimus? Ipsum omnis eum officiis, dolorum distinctio aliquid, aliquam accusamus dolore voluptas mollitia fugit repudiandae nisi!
-              </p>
-              </div>
-            </div>
-          </div>
-                    <!-- This is a row. -->
-                    <div class="row" style="padding: 3em 0;  margin: 0 5em;border-top: solid black 2px;">
-                      <div class="col-6">
-                        <h2>
-                          Where can I pay my Bills?
-                        </h2>
-                      </div>
-                      <div class="col-6 d-flex justify-content-end" data-bs-toggle="collapse" href="#collapseQuestion3">
-                        <button style="	background: none;
-                        color: inherit;
-                        border: none;
-                        padding: 0;;">
-                          <svg fill="#000000"  width="60px" height="60px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" stroke="#000000" stroke-width="5.500000000000001">
-          
-                            <g id="SVGRepo_bgCarrier" stroke-width="0"/>
-                            
-                            <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
-                            
-                            <g id="SVGRepo_iconCarrier"> <g> <path d="M78.466,35.559L50.15,63.633L22.078,35.317c-0.777-0.785-2.044-0.789-2.828-0.012s-0.789,2.044-0.012,2.827L48.432,67.58 c0.365,0.368,0.835,0.563,1.312,0.589c0.139,0.008,0.278-0.001,0.415-0.021c0.054,0.008,0.106,0.021,0.16,0.022 c0.544,0.029,1.099-0.162,1.515-0.576l29.447-29.196c0.785-0.777,0.79-2.043,0.012-2.828S79.249,34.781,78.466,35.559z"/> </g> </g>
-                            
-                            </svg>
-                        </button>
-                      </div>
-                      <div class="collapse" id="collapseQuestion3">
-                        <div class="card card-body" style="padding: 2em;">
-                        <p>
-                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti commodi, libero voluptates blanditiis necessitatibus, explicabo adipisci mollitia repudiandae dolore cupiditate animi reprehenderit vitae ipsa distinctio! Debitis deleniti et, illo iusto fugit natus. Odio voluptatem corrupti ipsa impedit repellendus error facilis exercitationem maxime similique, adipisci ex amet, sapiente ab eligendi id fugiat delectus. Possimus saepe facilis vero esse, illo veritatis, incidunt quo ratione inventore doloribus eligendi explicabo soluta tempora aspernatur natus ad quidem ea minima iusto optio. Sint accusantium delectus placeat in itaque dicta, ut possimus? Ipsum omnis eum officiis, dolorum distinctio aliquid, aliquam accusamus dolore voluptas mollitia fugit repudiandae nisi!
-                        </p>
-                        </div>
-                      </div>
-                    </div>
         </section>
   
         <!-- Contact Us -->
