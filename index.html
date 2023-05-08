@@ -28,54 +28,60 @@
    padding-right: 10px;
   }
 
-
-  /* Testimony Body, Profile IMG, Table Header */
-.testimony {
+/* Testimonies V.2 */
+.p-testimony{
+      background-color: rgba(0, 0, 0, 0.2); padding: 2em;  border-radius: 1.25rem;font-style: italic;
+    }
+    .client {
     width: 100%;
     height: 100%;
-    background: linear-gradient(to right, #242424, #FA0102); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: #1f1727;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffffff, #7d56a5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #222020, #ff0000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
 
+.carousel-icon i {
+  font-size: 5rem;
+  color: rgba(255, 255, 255, 0.3);
 }
-.td-profile-img{
-    padding: 0.5em 1em!important;
+
+.carousel-item i {
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.3);
 }
-.customer-img{
-    height: 50px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #ff0000;
-    color: #fff;
-    font-size: 1.5em;                              
+
+.t-card {
+  padding: 1.8125rem 1.125rem;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1.25rem;
+  color: #fff;
+  height: auto;
 }
-.remove-table-margin{
-    margin-bottom: 0!important;
-    border-bottom: none;
-    
-}
-.review-header{
-    background: #fff!important;
+
+.arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 1.5625rem solid transparent;
+  border-right: 1.5625rem solid transparent;
+  border-top: 1.25rem solid rgba(0, 0, 0, 0.5);
 }
 /* Star Rating */
-*{
-    margin: 0;
-    padding: 0;
-}
 .rate {
-    float: left;
+    display: block;
     height: 46px;
     overflow: hidden;
+    margin-bottom: 1em;
 }
 .rate:not(:checked) > input {
     position:absolute;
     top:-9999px;
 }
 .rate:not(:checked) > label {
-    float:right;
     width:1em;
     overflow:hidden;
     white-space:nowrap;
     cursor:pointer;
-    font-size:20px;
+    font-size:40px;
     color:#ccc;
 }
 .rate:not(:checked) > label:before {
@@ -148,7 +154,7 @@
 }
 }
 /* ---------------- */
-.carousel-inner .carousel-item{
+.carousel-inner.plans .carousel-item{
   height: 600px;
   overflow: hidden;
 }
@@ -207,7 +213,7 @@
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
     <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
   </div>
-  <div class="carousel-inner" >
+  <div class="carousel-inner plans" >
     <div class="carousel-item active" data-bs-interval="3000">
       <div  class="overlay" style="background-color: black;">
         <img src="img/1699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
@@ -546,259 +552,128 @@
       </div>
     </section>
 
-        <!-- Testimonies Section -->
-        <section class="testimony pt-3 pb-5">
-          <div class="container">
-            <div class="row text-center">
-              <div class="col-12">
-                <h1 class="display-3 fw-bold text-white">Testimonials</h1>
-                <p class="p-text text-white">What our clients are saying</p> 
+<!-- Testimonies V2 -->
+<section class="client pt-3 pb-5">
+  <div class="container">
+    <div class="row text-center">
+      <div class="col-12">
+        <h1 class="display-3 fw-bold text-white">Testimonials</h1>
+        <p class="p-text text-white">What our clients are saying</p> 
+      </div>
+    </div>
+    <div class="row align-items-md-center justify-content-center text-white">
+      <div class="col-lg-7 col-md-12 col-sm-12">
+        <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              </div>
+                    <!-- Wrapper for slides -->
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row p-4">
+                <div class="t-card mb-5 text-align-center">
+                      <!-- <h3 class="text-white">Testimonial</h3> -->
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" checked/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                       </div>
+                      <p class="lh-lg text-white p-testimony" > 
+                        Very legit 1 day process talaga sila and access na agad thank you Camxian. God bless more.
+                      </p>
+                      <i>- Gemma Salvador</i>
+                </div>
+
               </div>
             </div>
-              <div class="container">
-                  <div class="mt-2 row gy-3 d-flex justify-content-center">
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center">
-                                                      KL
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Kevin L.
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">12/26/2022</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">Super fast ng service</h5>
-                              <p class="card-text">Super fast ng service highly recommended ko less than 1 day nakabitan kana solid.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center">
-                                                      GT
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Gerund T.
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">01/09/2023</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">Super legit...</h5>
-                              <p class="card-text">Super legit... sobrang bilis pa ng kabit...thanks camxian&#128077; <br>
-                              <br></p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center">
-                                                      RB
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Rizzer B.
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">01/08/2023</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">Thank you Camxian</h5>
-                              <p class="card-text">Thank you Camxian for fast and legit transaction! Ang bilis may wifi na kami.&#128077;</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
-                  <div class="mt-2 row gy-3 d-flex justify-content-center">
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center" style="">
-                                                      BD
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Bernard D.
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">01/19/2023</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">thanks po sa mabilis</h5>
-                              <p class="card-text">thanks po sa mabilis na installation..apply na kayo.</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center" style="">
-                                                      MR
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Mariel
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">12/26/2022</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">Fast application legit</h5>
-                              <p class="card-text">Fast application legit partner ni PLDT thank you!</p>
-                              </div>
-                          </div>
-                      </div>
-                      <div class="col-lg-3 col-md-12">
-                          <div class="card">
-                              <div class="card-header review-header">
-                                  <table class="table table-borderless remove-table-margin">
-                                      <tbody>
-                                          <tr>
-                                              <td scope="col" class="td-profile-img">
-                                                  <div class="customer-img row d-flex justify-content-center align-content-center" style="">
-                                                      AN
-                                                  </div>
-                                              </td>
-                                              <td scope="col">
-                                                  <div class="customer-name">Anna
-                                                      <br>
-                                                      <div class="rate">
-                                                          <input type="radio" id="star5" name="rate" value="5" checked/>
-                                                          <label for="star5" title="text">5 stars</label>
-                                                          <input type="radio" id="star4" name="rate" value="4" />
-                                                          <label for="star4" title="text">4 stars</label>
-                                                          <input type="radio" id="star3" name="rate" value="3" />
-                                                          <label for="star3" title="text">3 stars</label>
-                                                          <input type="radio" id="star2" name="rate" value="2" />
-                                                          <label for="star2" title="text">2 stars</label>
-                                                          <input type="radio" id="star1" name="rate" value="1" />
-                                                          <label for="star1" title="text">1 star</label>
-                                                      </div>
-                                                  </div>
-                                              </td>
-                                              <td scope="col"><div class=""><small class="text-body-secondary">01/09/2023</small></div></td>
-                                          </tr>
-                                      </tbody>
-                                  </table>
-                              </div>
-                              <div class="card-body">
-                              <h5 class="card-title bold">Thank you ang bilis</h5>
-                              <p class="card-text">Thankyou ang bilis ng kabit ng wifi namin 1 day process lang&#10084;&#65039;</p>
-                              </div>
-                          </div>
-                      </div>
-                  </div>
+            <div class="carousel-item">
+              <div class="row p-4">
+                <div class="t-card mb-5 text-align-center">
+                      <!-- <h3 class="text-white">Testimonial</h3> -->
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" checked/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                       </div>
+                      <p class="lh-lg text-white p-testimony" > 
+                        Super fast ng service highly recommended ko less than 1 day nakabitan kana solid.
+                      </p>
+                      <i>- Kervin Charles Infantado Legaspi</i>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row p-4">
+                <div class="t-card mb-5 text-align-center">
+                      <!-- <h3 class="text-white">Testimonial</h3> -->
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" checked/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                       </div>
+                      <p class="lh-lg text-white p-testimony" > 
+                        Super legit... sobrang bilis pa ng kabit...thanks camxian&#128077;
+                      </p>
+                      <i>- Gerund Tadiarca</i>
+                </div>
+
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row p-4">
+                <div class="t-card mb-5 text-align-center">
+                      <!-- <h3 class="text-white">Testimonial</h3> -->
+                      <div class="rate">
+                        <input type="radio" id="star5" name="rate" value="5" checked/>
+                        <label for="star5" title="text">5 stars</label>
+                        <input type="radio" id="star4" name="rate" value="4" />
+                        <label for="star4" title="text">4 stars</label>
+                        <input type="radio" id="star3" name="rate" value="3" />
+                        <label for="star3" title="text">3 stars</label>
+                        <input type="radio" id="star2" name="rate" value="2" />
+                        <label for="star2" title="text">2 stars</label>
+                        <input type="radio" id="star1" name="rate" value="1" />
+                        <label for="star1" title="text">1 star</label>
+                       </div>
+                      <p class="lh-lg text-white p-testimony" > 
+                        Thank you Camxian for fast and legit transaction! Ang bilis may wifi na kami.&#128077;
+                      </p>
+                      <i>- Rizzer Bernardo</i>
+                </div>
+
               </div>
             </div>
           </div>
-      </section>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
     <!-- Footer -->
     <footer >
       <div class="row d-flex justify-content-center text footer-left">
