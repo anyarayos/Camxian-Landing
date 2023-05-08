@@ -202,6 +202,11 @@
         }
       }
     }
+
+    $('#trackingModal').on('hidden.bs.modal', function() {
+      // refresh current page
+      location.reload();
+    })
   </script>
   <!-- Footer -->
   <footer>
