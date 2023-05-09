@@ -78,25 +78,71 @@
 }
 
 
+.minus-margin {
+    margin-top: 150px;
+}
+
+.minus-margin-subs {
+    margin-top: 150px;
+}
+
+.minus-margin-faq {
+    margin-top: 150px;
+}
+
+.margin-pldt {
+    margin-top: -20px;
+}
+
+.margin-pldt-faq {
+    margin-top: -20px;
+}
+
+
 @media only screen and (max-width: 1400px) {
     
     .minus-margin {
-        margin-top: 50px;
+        margin-top: 180px;
     }
 
     .minus-margin-subs {
-        margin-top: 50px;
+        margin-top: 200px;
+    }
+
+    .minus-margin-faq {
+        margin-top: 200px;
+    }
+    
+
+    .margin-pldt {
+        margin-top: -120px;
+    }
+
+    .margin-pldt-faq {
+        margin-top: -120px;
     }
 }
 
 @media only screen and (max-width: 1200px) {
     
     .minus-margin {
-        margin-top: 150px;
+        margin-top: 200px;
     }
 
     .minus-margin-subs {
         margin-top: 150px;
+    }
+
+    .minus-margin-faq {
+        margin-top: 300px;
+    }
+
+    .margin-pldt {
+        margin-top: -200px;
+    }
+
+    .margin-pldt-faq {
+        margin-top: -200px;
     }
 }
 
@@ -107,7 +153,19 @@
     }
 
     .minus-margin-subs {
-        margin-top: 13px;
+        margin-top: 210px;
+    }
+
+    .minus-margin-faq {
+        margin-top: 300px;
+    }
+
+    .margin-pldt {
+        margin-top: -250px;
+    }
+
+    .margin-pldt-faq {
+        margin-top: -250px;
     }
 }
 
@@ -118,13 +176,33 @@
     }
 
     .minus-margin-subs {
-        margin-top: 213px;
+        margin-top: 210px;
+    }
+
+    .minus-margin-faq {
+        margin-top: 300px;
+    }
+
+    .margin-pldt {
+        margin-top: -300px;
+    }
+
+    .margin-pldt-faq {
+        margin-top: -300px;
     }
 }
 
-
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 768px) {
+
+    .margin-pldt {
+        margin-top: -50px;
+    }
+
+    .margin-pldt-faq {
+        margin-top: -100px;
+    }
+
     .tracker-logo {
         display: none;
     }
@@ -198,9 +276,14 @@
     }
 
     .minus-margin,
-    .minus-margin-subs {
+    .minus-margin-subs{
         display: none;
     }
+
+    .minus-margin-faq {
+        margin-top: 20px;
+    }
+
 
     /* Responsive Captions */
     .speed-main {
