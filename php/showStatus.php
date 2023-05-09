@@ -28,7 +28,7 @@ if (isset($_POST['sr_no'])) {
     trim($compliance_type, " ");
 
     if ($compliance_type == 'FOR PAYMENT') {
-        $status_message = "Congratulations! Your application has been approved! For us to proceed with the installation kindly settle the advance payment, details sent to you via text and email. Thank you!
+        $status_message = "Congratulations! Your application has been approved! For us to proceed with the installation kindly settle the advance payment, details sent to you via text and emailed. Thank you!
         Click the link for accredited PLDT Merchant.";
     } else if ($compliance_type == 'COMPLIANCE' || $compliance_type == 'FOR COMPLIANCE') {
         $status_message = "Your application is underway! Kindly submit the required documents prior for approval. Contact your Agent.";
@@ -38,10 +38,6 @@ if (isset($_POST['sr_no'])) {
         $status_message = "Congratulations! Your Application has been Approved! Please wait for the PLDT team to contact for installation. Thank you!";
     } else if ($compliance_type == 'CANCELLED') {
         $status_message = "Unfortunately, your application has been cancelled. Please see remarks.";
-    } else if ($compliance_type == 'FOR ADDRESS CREATION') {
-        $status_message = "Your application is for address creation. Contact your Agent.";
-    } else if ($compliance_type == 'CLOSED') {
-        $status_message = "This application has been closed. For further inquiries please contact your agent.";
     } else {
         $status_message = "The SR number provided does not exist. Double-check the tracking number or contact your agent for clarifications.";
     }
