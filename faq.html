@@ -18,76 +18,13 @@
     />
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css" />
-    <style>
-      .accordion{
-        margin: 2em;
-      }
-      .accordion-button{
-        font-size: 0.8em;
-      }
-      /* carousel */
-      .carousel{
-        height: 400px;
-        overflow: hidden;
-      }
-      .carousel-inner div{
-        height: 500px;
-        overflow: hidden;
-      }
-      .carousel-caption{
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%;
-      }
-      /* Responsive */
-      @media only screen and (min-width: 1200px) {
-        .img-header{
-        width: 100%;
-      }
-      }
-      @media only screen and (max-width: 500px) {
-        .faq-h1{
-          font-size: 2em!important;
-        }
-        .accordion-button{
-        font-size: 0.9em!important;
-      }
-        .carousel{
-        height: 200px;
-        overflow: hidden;
-      }
-      .carousel-inner div{
-        height: 200px;
-        overflow: hidden;
-      }
-      .accordion{
-        margin:0;
-      }
-      .faq-section{
-        padding: 1em!important;
-      }
-      .contact-section{ 
-        padding: 0.5em!important;
-      }
-      .padding-s{
-        padding: 0!important;
-      }
-      .padding-form{
-        padding: 0em;
-      }
-      .bx-shdw{
-        padding: 0em!important;
-        box-shadow: none!important;
-      }
-      }
-    </style>
+    <link rel="stylesheet" href="css/banner-style.css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/logo_solo_white.png" alt="logo" width="50px" />
+          <img src="img/logo_solo_white.png" alt="logo" style="width: 60px;margin-top: -4px;margin-left: 10px;"/>
         </a>
         <button
           class="navbar-toggler"
@@ -123,14 +60,17 @@
       </div>
     </nav>
     <!-- FAQ Image -->
-    <div id="carouselExampleCaptions" class="carousel">
-      <div class="carousel-inner" >
-        <div class="carousel-item active">
-            <img src="img/support.png" class="h-100 img-header" alt="..." style="opacity: 0.7;">
-          <div class="carousel-caption ">
-            <h1 class="bold speed-main red" style="font-size: 5em;">FAQ</h1>
- 
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner plans1">
+        <div class="carousel-item active" data-bs-interval="3000">
+          <div class="overlay">
+            <img src="img/support.png" class="d-block w-100" alt="..." style="opacity: 0.5;">
           </div>
+        </div>
+        <div class="carousel-caption d-md-block" style="color: black;">
+          <h1 class="bold speed-main red" style="font-size: 5em;margin-bottom: 1!important;">FAQs</h1>
+          <hr class="red-hr-2" />
         </div>
       </div>
     </div>
@@ -314,30 +254,30 @@
             <div class="col-lg-5 col-md-12 padding-s bx-shdw" style="padding: 3em;box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);
             -webkit-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);
             -moz-box-shadow: 2px 2px 27px 0px rgba(0,0,0,0.5);">
-              <form class="padding-form" action="mailto:info@camxian.com" method="get" enctype="text/plain">
+              <form class="padding-form" action="">
                 <div class="row">
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">First Name</label>
-                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name" name="firstname">
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="First Name">
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="mb-3">
                       <label for="exampleFormControlInput1" class="form-label">Last Name</label>
-                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name"  lastname="lastname">
+                      <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Last Name">
                     </div>
                   </div>
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="exampleFormControlInput1" class="form-label">Email address</label>
-                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com"  name="email">
+                  <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
                 </div>
                 <div class="col-md-12 mb-3">
                   <label for="exampleFormControlTextarea1" class="form-label">How can we help you?</label>
                   <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                 </div>
-                <input type="submit" value="Submit" style="padding: 0.5em; background-color: #D0052C; 
+                <input type="button" value="Submit" style="padding: 0.5em; background-color: #D0052C; 
                 color: #FFFF; border: none;border-radius: 10px;">
               </form>
             </div>
