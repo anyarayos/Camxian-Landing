@@ -152,6 +152,10 @@
 .speed-old, .plan-name{
   font-size: 1em!important;
 }
+.btn-apply-now{
+  border-radius: 20px!important;
+  font-size: 1em!important;
+}
 }
 /* ---------------- */
 .carousel-inner.plans .carousel-item{
@@ -161,7 +165,17 @@
 .speed-main,.speed-old,.plan-name{
   text-shadow: 2px 2px 3px rgba(0,0,0,0.33);
 }
+.btn-apply-now{
+  background-color: #ff0000;
+  border-radius: 50px;
+  font-size: 2em;
+}
+.btn-apply-now:hover{
+  background-color: #1f1727;
+  opacity: 0.5!important;
 
+
+}
     </style>
     
   </head>
@@ -169,7 +183,7 @@
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="img/logo_solo_white.png" alt="logo" style="width: 60px;margin-top: -4px;margin-left: 10px;"/>
+          <img src="img/logo_solo_white.png" alt="logo" width="50px" />
         </a>
         <button
           class="navbar-toggler"
@@ -219,9 +233,11 @@
         <img src="img/1699.jpg" class="d-block w-100" alt="..." style="opacity: 0.9;">
       </div>
       <div class="carousel-caption d-md-block" style="color: black;">
+        
         <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">200 Mbps</h1>
         <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">100Mbps</span></p>
         <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 1699</p>
+        <button type="button" class="btn btn-apply-now text-white bold" onclick="applyNow()">Apply Now</button>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
@@ -232,6 +248,7 @@
         <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">400 Mbps</h1>
         <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">200Mbps</span></p>
         <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2099</p>
+        <button type="button" class="btn btn-apply-now text-white bold" onclick="applyNow()">Apply Now</button>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
@@ -242,6 +259,7 @@
         <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">600 Mbps</h1>
         <p class="bold speed-old" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p>
         <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 2699</p>
+        <button type="button" class="btn btn-apply-now text-white bold" onclick="applyNow()">Apply Now</button>
       </div>
     </div>
     <div class="carousel-item" data-bs-interval="3000">
@@ -252,6 +270,7 @@
         <h1 class="bold speed-main" style="color: white;font-size: 5em;margin-bottom: 0!important;">1000 Mbps</h1>
         <!-- <p class="bold" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">before <span style="text-decoration: line-through">400Mbps</span></p> -->
         <p class="bold plan-name" style="color: #fff;font-size: 2.5em;margin-bottom: 0!important;">Fiber Unli Plan 9499</p>
+        <button type="button" class="btn btn-apply-now text-white bold" onclick="applyNow()">Apply Now</button>
       </div>
     </div>
   </div>
@@ -264,7 +283,6 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-    
     <!-- ID Requirements -->
     <section class="id-requirements xs-padding text-align-center">
       <div class="row d-flex justify-content-center reqs-align-left">
